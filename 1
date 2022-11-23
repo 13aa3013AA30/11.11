@@ -1,0 +1,28 @@
+class Cat:
+    def __init__(self, number):
+        self.massa = 5
+        self.poroda = "british"
+        self.color = 'white'
+        self.age = 3
+
+        self.index = number
+        self.doing = 'sleeping'
+
+    def cat_doing(self):
+        return print(f'cat is {self.doing}')
+
+
+    def cat_activities(self, new_cat_activity):
+        if self.index >= 0.5:
+            self.doing = new_cat_activity
+            self.cat_doing
+        if self.index <= 0.5:
+            self.cat_doing
+
+
+
+a = Cat(0.5)
+a.cat_doing()
+b=Cat(0.6)
+b.cat_activities('running')
+b.cat_doing()
